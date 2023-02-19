@@ -1,0 +1,40 @@
+// Ejercicio de aplicación usando cadenas de caracteres
+// Defino una variable con mi nombre
+let nombre = "Nahuel";
+console.log(nombre);
+
+// Defino una variable con mi apellido
+let apellido = "Torres";
+console.log(apellido);
+
+// Defino una variable "estudiante" concatenado las variables "nombre" y "apellido"
+let estudiante = `${nombre} ${apellido}`;
+console.log(estudiante);
+
+// Defino una variable "estudianteMayus" que almacena la variable "estudiante" cons sus caracteres en mayusculas
+let estudianteMayus = estudiante.toUpperCase();
+console.log(estudianteMayus);
+
+// Defino una variable "estudianteMinus" que almacena la variable "estudiante" con sus caracteres en minusculas
+let estudianteMinus = estudiante.toLowerCase();
+console.log(estudianteMinus);
+
+// Variable que almacena el numero de caracteres, contando los espacios, de la variable "estdudiante"
+let contEstudiantes = estudiante.length;
+console.log(contEstudiantes);
+
+// Variable que contiene la primera letra de la variable "nombre"
+let primerCaract = nombre[0];
+console.log(primerCaract);
+
+// Variable que contiene la ultima letra de la variable "apellido"
+let ultimoCaract = apellido[apellido.length-1];
+console.log(ultimoCaract);
+
+// Variable que almacena la variabel "estudiante" sin espacios
+let cadena1 = estudiante.replace(" ","");
+console.log(cadena1);
+
+// Variable que retorna "true" si Nombre esta en la variable estudiante
+let verdadero = estudiante.includes(nombre);
+console.log(verdadero);
